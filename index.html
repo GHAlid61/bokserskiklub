@@ -8,15 +8,99 @@
 <meta property="og:title" content="Bokserski Klub Ilidža — Sarajevo">
 <meta property="og:description" content="Bokserski Klub Ilidža — besplatni treninzi boksa svaki dan u 19:00 u Hrasnici, Sarajevo. Klub otvorenih vrata za sve nivoe, bez članarine.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%2317140f'/%3E%3Ccircle cx='32' cy='32' r='31' fill='none' stroke='%23a9812e' stroke-width='2'/%3E%3Ctext x='32' y='40' font-family='Arial,sans-serif' font-weight='900' font-size='22' fill='%23a9812e' text-anchor='middle'%3EBK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+<style>
+:root{--gold:#d8a63c;--white:#fff}
+body{
+  color:var(--white);
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.65),rgba(0,0,0,.38)),
+    url("strana5.jpg") center/cover fixed no-repeat;
+}
+h1,h2,h3,p,a,span,li,.eyebrow,.mono{text-shadow:0 2px 12px rgba(0,0,0,.95)}
+h1,h2,h3,.hero-sub,.eyebrow,.round-label,.teaser-card p,.footer-col p,.footer-bottom{color:#fff!important}
+header{background:rgba(0,0,0,.8)!important;backdrop-filter:blur(10px);border-bottom:1px solid rgba(216,166,60,.35)}
+.brand,.brand:visited,nav a,nav a:visited{color:#fff!important}
+.brand:hover,nav a:hover{color:var(--gold)!important}
+.hero{min-height:72vh;display:flex;align-items:center;background:rgba(0,0,0,.08)!important}
+.hero-frame{background:rgba(0,0,0,.4);backdrop-filter:blur(2px);border:1px solid rgba(216,166,60,.42);box-shadow:0 20px 70px rgba(0,0,0,.55)}
+.hero h1{color:#fff!important;font-size:clamp(3rem,8vw,7rem);line-height:.95}
+.hero h1 span{color:var(--gold)!important}
+.hero-sub{max-width:680px;font-size:1.05rem;line-height:1.7}
+.stamp{background:var(--gold)!important;color:#111!important;text-shadow:none!important;font-weight:900}
+.btn{transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.btn:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 12px 28px rgba(0,0,0,.45)}
+.btn-primary{background:var(--gold)!important;color:#111!important;text-shadow:none!important}
+.btn-ghost{color:#fff!important;border-color:#fff!important}
+#pregled{background:rgba(0,0,0,.76)!important;backdrop-filter:blur(8px)}
+.teaser-card{background:rgba(18,18,18,.9)!important;border:1px solid rgba(255,255,255,.12);color:#fff!important;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.teaser-card:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.teaser-card h3,.teaser-arrow,.teaser-num{color:var(--gold)!important}
+footer{background:rgba(0,0,0,.92)!important;border-top:1px solid rgba(216,166,60,.35)}
+footer a{color:#fff!important} footer a:hover{color:var(--gold)!important}
+.float-cta{background:var(--gold)!important;color:#111!important;box-shadow:0 8px 25px rgba(0,0,0,.45);transition:transform .25s ease}
+.float-cta:hover{transform:scale(1.06)}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:768px){body{background-position:center top;background-attachment:scroll}.hero{min-height:65vh}}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener("click",e=>{
+    const target=document.querySelector(link.getAttribute("href"));
+    if(target){e.preventDefault();target.scrollIntoView({behavior:"smooth"});}
+  }));
+  const items=document.querySelectorAll(".hero-frame,.teaser-card,.round-label,footer");
+  items.forEach(el=>el.classList.add("reveal"));
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}
+  }),{threshold:.12});
+  items.forEach(el=>observer.observe(el));
+  const toggle=document.getElementById("navToggle"),navList=document.getElementById("navList");
+  if(toggle&&navList)toggle.addEventListener("click",()=>{
+    navList.classList.toggle("open");
+    toggle.textContent=navList.classList.contains("open")?"ZATVORI":"MENI";
+  });
+  if(window.matchMedia("(min-width:769px)").matches)window.addEventListener("mousemove",e=>{
+    const x=(e.clientX/window.innerWidth-.5)*8,y=(e.clientY/window.innerHeight-.5)*8;
+    document.body.style.backgroundPosition=`calc(50% + ${x}px) calc(50% + ${y}px)`;
+  });
+});
+</script>
+
+
+<style>
+.hero-frame{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+}
+.hero-inner{
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+  padding:clamp(20px,5vw,60px) 0 !important;
+}
+.hero h1{
+  color:#fff !important;
+  text-shadow:0 4px 24px rgba(0,0,0,.95) !important;
+  font-size:clamp(3rem,9vw,8rem) !important;
+  line-height:.95 !important;
+  margin:0 !important;
+  max-width:1100px;
+}
+</style>
+
 </head>
 <body>
 <header>
   <div class="navbar">
-    <a href="index.html" class="brand"><span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="var(--ink)"/><circle cx="12" cy="12" r="11" fill="none" stroke="var(--gold)" stroke-width="1.5"/><text x="12" y="15.8" font-family="'Big Shoulders Display',Arial,sans-serif" font-weight="900" font-size="9.5" fill="var(--gold)" text-anchor="middle">BK</text></svg></span>BK Ilidža</a>
+    <a href="index.html" class="brand"><image src="logo.png" width="50" height="40"></image>BK Ilidža</a>
     <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">MENI</button>
     <nav>
       <ul id="navList">
@@ -38,14 +122,7 @@
       <span class="corner-mark bl"></span>
       <span class="corner-mark br"></span>
       <div class="hero-inner">
-        <div class="stamp">Besplatno<br>Članstvo</div>
-        <div class="eyebrow mono">Bokserski Klub Ilidža — Sarajevo</div>
-        <h1>Trening svaki radni  dan.<br><span>19:00.</span> Bez naknade.</h1>
-        <p class="hero-sub">Klub otvorenih vrata u Hrasnici. Disciplina, rad i zajednica — bez članarine kao prepreke. Svako veče, cijele godine.</p>
-        <div class="hero-actions">
-          <a href="kontakt.html" class="btn btn-primary">Dođi na trening</a>
-          <a href="o-nama.html" class="btn btn-ghost">O klubu</a>
-        </div>
+        <h1>Bokserski Klub Ilidža — Sarajevo</h1>
       </div>
     </div>
   </div>
