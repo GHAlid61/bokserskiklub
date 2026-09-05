@@ -4,11 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kontakt — Bokserski Klub Ilidža</title>
-<meta name="description" content="Adresa, kontakt podaci i lokacija Bokserskog Kluba Ilidža u Hrasnici, Sarajevo.">
+<meta name="description" content="Adresa, kontakt podaci i lokacija Bokserskog Kluba Ilidža u Hrasnici, Sarajevo. Trening je potpuno besplatan.">
 <meta property="og:title" content="Kontakt — Bokserski Klub Ilidža">
-<meta property="og:description" content="Adresa, kontakt podaci i lokacija Bokserskog Kluba Ilidža u Hrasnici, Sarajevo.">
+<meta property="og:description" content="Adresa, kontakt podaci i lokacija Bokserskog Kluba Ilidža u Hrasnici, Sarajevo. Trening je potpuno besplatan.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%2317140f'/%3E%3Ccircle cx='32' cy='32' r='31' fill='none' stroke='%23a9812e' stroke-width='2'/%3E%3Ctext x='32' y='40' font-family='Arial,sans-serif' font-weight='900' font-size='22' fill='%23a9812e' text-anchor='middle'%3EBK%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#15120d">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -16,14 +18,13 @@
 <body>
 <header>
   <div class="navbar">
-    <a href="index.html" class="brand"><image src="logo.png" width="50" height="40"></image>BK Ilidža</a>
+    <a href="index.html" class="brand"><span class="dot"><img src="logo.png" alt="BK Ilidža logo"></span>BK Ilidža</a>
     <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">MENI</button>
     <nav>
       <ul id="navList">
         <li><a href="o-nama.html">O nama</a></li>
         <li><a href="treneri.html">Treneri</a></li>
         <li><a href="raspored.html">Raspored</a></li>
-        <li><a href="clanarina.html">Članarina</a></li>
         <li><a href="galerija.html">Galerija</a></li>
         <li><a href="kontakt.html" class="active">Kontakt</a></li>
       </ul>
@@ -32,8 +33,15 @@
 </header>
 <section id="kontakt">
   <div class="wrap">
-    <div class="round-label mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a5 5 0 00-5 5v2.5l-1.5 3.5h13l-1.5-3.5V8a5 5 0 00-5-5z"/><path d="M9.5 17a2.5 2.5 0 005 0"/></svg>Round 6 — Kontakt</div>
+    <div class="round-label mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a5 5 0 00-5 5v2.5l-1.5 3.5h13l-1.5-3.5V8a5 5 0 00-5-5z"/><path d="M9.5 17a2.5 2.5 0 005 0"/></svg>Kontakt</div>
     <h2 class="section-title">Dođi na prvi trening.</h2>
+    <div class="free-block" style="margin-top:0; margin-bottom:44px;">
+      <div class="free-badge"><span>100%<br>Besplatno</span></div>
+      <p class="lede" style="margin-top:0;">
+        Trening u Bokserskom Klubu Ilidža je potpuno besplatan — bez upisnine, bez mjesečne članarine.
+        Dovoljno je doći u salu radnim danom u 19:00.
+      </p>
+    </div>
     <div class="contact-grid">
       <ul class="contact-list">
         <li>
@@ -58,7 +66,7 @@
           <span class="ico">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
           </span>
-          <div><b>Trening</b>Svaki dan, 19:00 — dođi 10 minuta ranije prvi put.</div>
+          <div><b>Trening</b>Radnim danima, 19:00 — dođi 10 minuta ranije prvi put.</div>
         </li>
       </ul>
       <div class="map-card">
@@ -79,7 +87,10 @@
 </section>
 <footer>
   <div class="wrap footer-inner" style="grid-template-columns:1fr auto;">
-    
+    <div class="footer-col">
+      <div class="footer-brand">BK Ilidža</div>
+      <p>Bokserski Klub Ilidža</p>
+    </div>
   </div>
   <div class="wrap footer-bottom">Bokserski Klub Ilidža · © <span class="year">2026</span></div>
 </footer>

@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Članarina — Bokserski Klub Ilidža</title>
-<meta name="description" content="Trening u Bokserskom Klubu Ilidža je potpuno besplatan, bez upisnine i mjesečne članarine.">
-<meta property="og:title" content="Članarina — Bokserski Klub Ilidža">
-<meta property="og:description" content="Trening u Bokserskom Klubu Ilidža je potpuno besplatan, bez upisnine i mjesečne članarine.">
+<title>Emir Telalović — Trener — Bokserski Klub Ilidža</title>
+<meta name="description" content="Biografija trenera Emira Telalovića, Bokserski Klub Ilidža.">
+<meta property="og:title" content="Emir Telalović — Trener — Bokserski Klub Ilidža">
+<meta property="og:description" content="Biografija trenera Emira Telalovića, Bokserski Klub Ilidža.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%2317140f'/%3E%3Ccircle cx='32' cy='32' r='31' fill='none' stroke='%23a9812e' stroke-width='2'/%3E%3Ctext x='32' y='40' font-family='Arial,sans-serif' font-weight='900' font-size='22' fill='%23a9812e' text-anchor='middle'%3EBK%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#15120d">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -16,31 +18,43 @@
 <body>
 <header>
   <div class="navbar">
-    <a href="index.html" class="brand"><image src="logo.png" width="50" height="40"></image>BK Ilidža</a>
+    <a href="index.html" class="brand"><span class="dot"><img src="logo.png" alt="BK Ilidža logo"></span>BK Ilidža</a>
     <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">MENI</button>
     <nav>
       <ul id="navList">
         <li><a href="o-nama.html">O nama</a></li>
-        <li><a href="treneri.html">Treneri</a></li>
+        <li><a href="treneri.html" class="active">Treneri</a></li>
         <li><a href="raspored.html">Raspored</a></li>
-        <li><a href="clanarina.html" class="active">Članarina</a></li>
         <li><a href="galerija.html">Galerija</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
   </div>
 </header>
-<section id="clanarina">
+<section id="emir">
   <div class="wrap">
-    <div class="round-label mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a5 5 0 00-5 5v2.5l-1.5 3.5h13l-1.5-3.5V8a5 5 0 00-5-5z"/><path d="M9.5 17a2.5 2.5 0 005 0"/></svg>Round 4 — Članarina</div>
-    <h2 class="section-title">Bez cijene. Bez izgovora.</h2>
-    <div class="free-block">
-      <div class="free-badge"><span>100%<br>Besplatno</span></div>
-      <p class="lede" style="margin-top:0;">
-        Trening u Bokserskom Klubu Ilidža je potpuno besplatan — bez upisnine, bez mjesečne članarine.
-        Cilj kluba je da boks bude dostupan svima u zajednici, bez obzira na finansijsku situaciju.
+    <div class="round-label mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a5 5 0 00-5 5v2.5l-1.5 3.5h13l-1.5-3.5V8a5 5 0 00-5-5z"/><path d="M9.5 17a2.5 2.5 0 005 0"/></svg>Trener — Emir Telalović</div>
+    <div class="bio-header">
+      <div class="bio-photo placeholder">ET</div>
+      <div>
+        <h2 class="section-title" style="margin-bottom:6px;">Emir Telalović</h2>
+        <span class="coach-role">Trener, Bokserski Klub Ilidža</span>
+      </div>
+    </div>
+    <div class="bio-body">
+      <p>
+        Emir Telalović jedan je od istaknutijih boksera koji
+        su nosili dres Bokserskog kluba Ilidža i predstavljali
+         Bosnu i Hercegovinu na međunarodnoj sceni.
+         <br>
+        Bogatstvo iskustva stečeno u stotinama amaterskih 
+        i profesionalnih borbi te rad s vrhunskim domaćim 
+        i inostranim stručnjacima prenio je u BK Ilidža. 
+        Danas to takmičarsko iskustvo i poznavanje osjećaja 
+        u ringu direktno prenosi na nove generacije boksera kluba.
       </p>
     </div>
+    <a href="treneri.html" class="back-link">← Nazad na trenere</a>
   </div>
 </section>
 <footer>
@@ -53,7 +67,7 @@
     <div class="footer-col footer-contact">
       <span class="fill">Unesite broj telefona kluba</span>
       <span class="fill">Unesite e-mail adresu kluba</span>
-      <p style="margin-top:8px;">Trening svaki dan u 19:00</p>
+      <p style="margin-top:8px;">Trening radnim danima u 19:00</p>
     </div>
     <div class="footer-col">
       <div class="social-row">
