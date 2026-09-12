@@ -149,7 +149,7 @@ nav a:hover, nav a:focus-visible, nav a.active{
 /* ---------- HERO PHOTO ZONE (hero + upoznaj klub share one continuous photo/fade) ---------- */
 .hero-photo-zone{
   position:relative;
-  background:#0d0b09 url('pozadina7.png') center 20%/cover no-repeat;
+  background:#0d0b09 url('pozadina0.png') center 20%/cover no-repeat;
 }
 .hero-photo-zone::before{
   content:"";
