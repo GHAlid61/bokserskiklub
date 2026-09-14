@@ -151,7 +151,7 @@ nav a:hover, nav a:focus-visible, nav a.active{
   position:relative;
   background:
        
-        url("pozadinab.png");
+        url("slike/pozadina0.png");
     background-size: width="200 ";
     background-position: center top;
     background-attachment: fixed;
@@ -394,7 +394,7 @@ section:last-of-type{border-bottom:none;}
             rgba(10,10,10,0.75),
             rgba(10,10,10,0.85)
         ),
-        url("pozadina4.jpg");
+        url("slike/pozadina4.jpg");
     background-size: width="200 ";
     background-position: center top;
     background-attachment: fixed;
