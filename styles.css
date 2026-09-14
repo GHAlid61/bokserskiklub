@@ -149,7 +149,13 @@ nav a:hover, nav a:focus-visible, nav a.active{
 /* ---------- HERO PHOTO ZONE (hero + upoznaj klub share one continuous photo/fade) ---------- */
 .hero-photo-zone{
   position:relative;
-  background:#0d0b09 url('pozadina0.png') center 20%/cover no-repeat;
+  background:
+       
+        url("pozadinab.png");
+    background-size: width="200 ";
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .hero-photo-zone::before{
   content:"";
@@ -380,11 +386,41 @@ section:last-of-type{border-bottom:none;}
 }
 
 /* ---------- ABOUT ---------- */
+#o-nama {
+    position: relative;
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(10,10,10,0.75),
+            rgba(10,10,10,0.85)
+        ),
+        url("pozadina4.jpg");
+    background-size: width="200 ";
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+#o-nama .wrap {
+    position: relative;
+    z-index: 2;
+}
+
+
+.about-grid,
+.free-block,
+.map-card {
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(212,175,55,0.25);
+    border-radius: 20px;
+}
 .about-grid{
   display:grid;
   grid-template-columns:1.1fr 0.9fr;
   gap:60px;
-  margin-top:44px;
+  margin-top:64px;
 }
 .about-facts{
   display:grid;
@@ -407,6 +443,7 @@ section:last-of-type{border-bottom:none;}
 }
 @media (max-width:860px){
   .about-grid{grid-template-columns:1fr;}
+  
 }
 
 /* ---------- COACHES ---------- */
@@ -668,6 +705,7 @@ section:last-of-type{border-bottom:none;}
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:50px;
+   
 }
 .contact-list{list-style:none; margin:0; padding:0; display:grid; gap:22px;}
 .contact-list li{display:flex; gap:16px; align-items:flex-start;}
